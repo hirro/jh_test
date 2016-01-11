@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="00000000000001" author="jhipster">
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/pagination.csv"
+                  separator=";"
+                  tableName="pagination_no"/>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/pagination.csv"
+                  separator=";"
+                  tableName="pagination_infinite"/>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/pagination.csv"
+                  separator=";"
+                  tableName="pagination_simple"/>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/pagination.csv"
+                  separator=";"
+                  tableName="pagination_pagination"/>
+    </changeSet>
+    
+</databaseChangeLog>
